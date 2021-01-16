@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        padding:15px 50px;
+        font-size:80px;
+        text-align: center;
+        background-color:coral;
+        border-radius: 10px;
+    }
+    p{
+        font-weight: bold;
+        font-size:150%;
+    }
+    #button{
+
+        padding:10px 17px;
+        border:10px rgb(15, 13, 17);
+        color:black;
+        font-weight: bolder;
+ }
+
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 230px 240px;
+        padding:3px;
+        background-image:url('Hotel2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+     }
+
+
+     input[type="submit"],
+     select,textarea{
+         width:20%;
+         background-color: cornsilk;
+         padding:4px;
+         font-weight: bold;
+     }
+     input[type="text"],
+     input[type="email"],
+     input[type="date"],
+     input[type="time"],
+     input[type="room_type"],
+     input[type="Number of Guests"],
+     select,
+     textarea{
+         width: 100%;
+         padding: 10px;
+         border-radius: 30px;
+         background-color:rgb(226, 226, 157);
+     }
+    
+</style>
+<body>
+    <form id="my form">
+    <h1>Hotel booking</h1>
+    <p>Name:
+        <input type="text" name="name" placeholder="Enter the Name"></p>
+    <p>Email:
+        <input type="email" name="email" id="email" placeholder="xyzjdj@gmail.com"></p>
+    <p>Room Type:
+        <select name="room_type" id="room_type">
+            <option value="">--select a room type--</option>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Triple">Triple</option>
+            <option value="Quad">Quad</option>
+        </select>
+        <p>Number of Guests:
+            <select name="Number of Guests" id="Number of Guests">
+                <option value="">--select number of guests--</option>
+                <option value="Single">1</option>
+                <option value="Double">2</option>
+                <option value="Triple">3</option>
+                <option value="Quad">4</option>
+            </select>
+        <p>
+            Arrival Date:<input type="date" name="arrival_date" id="arrival_date" <br> Arrival Time:<input type="time" name="time" id="time"></p>
+          <p>
+            Departure Date:<input type="date" name="departure_date" id="arrival_date">
+          </p>
+        <p>Special Guests:<br><textarea name="name2" id="name" cols="100" rows="9"></textarea></p>
+
+        <button id="button" class="click" name="Done">Submit Form</button>
+        
+    <script>
+        function myFunc(){
+            document.getElementbyID("my form").submit();
+        }
+    </script>
+    </form>
+</body>
+</html>
